@@ -1,23 +1,49 @@
-.feed-form {
-    margin-top: 36px;
+.advice__form {
+    padding: 17px 0 30px 0; 
     display: flex;
-    flex-direction: column;
-    width: 300px;
+    justify-content: center;
     input {
-        height: 50px;
-        border-radius: 5px;
-        background-color: #ffffff;
-        margin-bottom: 15px;
-        border: none;
-        padding: 0 20px;
-        color: #4b4b4b;
-        font-size: 14px;
-        font-weight: 300;
-        &:nth-child(3) {
-            margin-bottom: 20px;
+        padding: 17px 24px;
+        border: solid 1px rgba(0, 0, 0, 0.21); 
+        border-radius: 30px; 
+        margin-right: 4px;    
+        &:focus {
+            outline: none; 
+            border: solid 2px $border-focus_c; 
         }
     }
-    &_mt25 {
-        margin-top: 25px;
+}
+
+.question__form {
+    padding-bottom: 25px;
+    width: 813px;
+    margin: 18px 41px 0 41px;
+    input {
+        box-sizing: border-box;
+        width: 268px;
+        padding: 17px 24px;
+        border: solid 1px rgba(0, 0, 0, 0.21); 
+        border-radius: 30px; 
+        background-color: #ffffff;   
+        &:focus {
+            outline: none; 
+            border: solid 2px $border-focus_c;
+        }
+    }
+    textarea {
+        box-sizing: border-box;
+        width: 100%;
+        min-height: 71px;
+        margin-top: 8px;
+        padding: 17px 24px;
+        border-radius: 8px;
+        resize: none;
+        background-color: #ffffff;
+        
+        &:focus {
+            outline: none; 
+            border: solid 2px $border-focus_c;
+            
+        }
     }
 }

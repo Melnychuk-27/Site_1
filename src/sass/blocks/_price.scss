@@ -12,7 +12,7 @@
         margin-top: 20px;
         width: 148px;
         height: 1px;
-        background-color: #ec644b;
+        background-color: $main-color;
     }
     &__subtitle {
         margin-top: 17px;
@@ -45,7 +45,7 @@
             text-align: center;
             line-height: 23px;
             text-transform: uppercase;
-            color: #ffffff;
+            color: $text-color;
             background-color: #25333c;
             margin-bottom: 14px;
             }
@@ -67,7 +67,7 @@
             span {
                 font-size: 28px;
                 text-align: center;
-                color: #ec644b;
+                color: $main-color;
                 text-transform:none;
             }
         }
@@ -79,14 +79,6 @@
             line-height: 1.43;
             text-align: center;
             color: #2e2e2e;
-        }
-        
-        .btn__card {
-            
-            margin: 0 auto;
-            margin-top: 25px;
-            margin-bottom: 25px;
-            padding: 18px 45px 16px 43px;
         }
     }
 }

@@ -15,7 +15,7 @@
         margin-top: 20px;
         width: 148px;
         height: 1px;
-        background-color: #ec644b;
+        background-color: $main-color;
         
     }
     &__subtitle{
@@ -57,6 +57,6 @@
         font-size: 18px;
         font-weight: bold;
         text-align: center;
-        color: #ec644b;
+        color: $main-color;
     }
 }

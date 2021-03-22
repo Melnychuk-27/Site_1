@@ -3,18 +3,19 @@
 // @import 'libs/slick';
 // @import 'libs/animate';
 
-// @import 'base/variables';
+@import 'base/variables';
 // @import 'base/animations';
 * {
     font-family: 'Museo Sans Cyrl', sans-serif;
+    box-sizing: border-box;
 }
 .container {
     max-width: 1140px;
     margin: 0 auto;
 }
-// @import 'blocks/promo';
-@import 'blocks/header.scss';
-// @import 'blocks/buttons';
+@import 'blocks/promo';
+@import 'blocks/header';
+@import 'blocks/buttons';
 @import 'blocks/advantages';
 @import 'blocks/work';
 @import 'blocks/agent';
@@ -23,9 +24,8 @@
 @import 'blocks/managers';
 @import 'blocks/scheme-work';
 @import 'blocks/map';
-// @import 'blocks/forms';
+@import 'blocks/forms';
 // @import 'blocks/carousel';
 @import 'blocks/question';
 @import 'blocks/footer';
 // @import 'blocks/modal';
-// @import 'blocks/pageup';
