@@ -1,0 +1,71 @@
+.question {
+    padding: 62px 0 79px 0;
+    width: 100%;
+    background: url("../img/plane.jpg") center (center/cover) no-repeat;
+    &__wrapper {
+        margin: 0 auto;
+        width: 896px;
+        background-color: rgba($color: #fff, $alpha: .7);
+    }
+    &__title {
+        padding: 20px 0 19px;
+        background-color: #25333c;
+        font-family: Roboto;
+        font-size: 19px;
+        font-weight: bold;
+        text-align: center;
+        color: #ffffff;
+        text-transform: uppercase;
+    }
+    &__subtitle {
+        display: block;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: normal;
+        color: #ffffff;
+        
+        
+    }
+    &__form {
+        // display: flex;
+        padding-bottom: 25px;
+        // justify-content: center;
+        width: 813px;
+        margin: 18px 41px 0 41px;
+        input {
+            box-sizing: border-box;
+            width: 268px;
+            padding: 17px 24px;
+            border: solid 1px rgba(0, 0, 0, 0.21); 
+            border-radius: 30px; 
+            background-color: #ffffff;   
+            &:focus {
+                outline: none; 
+                border: solid 1px #ec644b;
+            }
+        }
+        textarea {
+            box-sizing: border-box;
+            width: 100%;
+            min-height: 71px;
+            margin-top: 8px;
+            padding: 17px 24px;
+            border-radius: 8px;
+            resize: none;
+            background-color: #ffffff;
+            
+            &:focus {
+                outline: none; 
+                border: solid 1px #ec644b;
+                
+            }
+        }
+        .btn__question {
+            display: block;
+            margin: 0 auto;
+            margin-top: 17px;
+            padding: 18px 31px;
+            background-color: #ec644b;
+        }
+    }
+}

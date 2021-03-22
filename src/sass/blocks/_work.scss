@@ -1,0 +1,62 @@
+.work {
+    padding: 51px 0 57px 0;
+    background-color: #fff;
+    &__title{
+        font-family: Roboto;
+        font-size: 26px;
+        font-weight: bold;
+        line-height: 0.88;
+        text-align: center;
+        color: #2e2e2e;
+        margin-bottom: -5px;
+    }
+    &__line {
+        margin: 0 auto;
+        margin-top: 20px;
+        width: 148px;
+        height: 1px;
+        background-color: #ec644b;
+        
+    }
+    &__subtitle{
+        margin-top: 17px;
+        font-family: Roboto;
+        font-size: 21px;
+        font-weight: 300;
+        line-height: 1.14;
+        text-align: center;
+        color: #2e2e2e;
+    }
+    &__wrapper{
+        margin-top: 37px;
+        display: flex;
+        justify-content: space-between;
+        // flex-wrap: wrap;
+        // flex-direction: row;
+    }
+    &__item{
+        display: flex;
+        flex-direction:column ;
+        max-width: 359px;
+    }
+    &__icon{
+        img{
+            display: block;
+        }
+    }
+    &__descr{
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.57;
+        text-align: justify;
+        color: #3a3a3a;
+    }
+    &__title-decr{
+        margin-top: 27px;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        color: #ec644b;
+    }
+}

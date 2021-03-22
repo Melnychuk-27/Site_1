@@ -1,0 +1,91 @@
+.advice {
+    padding-bottom: 58px;
+    &__title {
+        margin-bottom: 20px;
+        font-family: Roboto;
+        font-size: 28px;
+        font-weight: normal;
+        text-align: center;
+        color: #3a3a3a;
+    }
+    &__border {
+        border: 1px solid rgba(0,0,0,.21);
+        margin-top: 71px;
+        padding: 68px 0 53px 0;
+        position: relative;
+    }
+    &__icon  {
+        width: 102px;
+        height: 102px;
+        border: solid 1px #e93b3b;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        img {
+            display: block;
+        }
+        &:after {
+            content: '';
+            height: 100%;
+            width: 10px;
+            position: absolute;
+            background-color: #fff;
+            right: -11px;
+        }
+        &:before {
+            content: '';
+            height: 100%;
+            width: 10px;
+            position: absolute;
+            background-color: #fff;
+            left: -11px;
+        }
+    }
+    &__form {
+        padding: 17px 0 30px 0; 
+        display: flex;
+        justify-content: center;
+        input {
+            padding: 17px 24px;
+            border: solid 1px rgba(0, 0, 0, 0.21); 
+            border-radius: 30px;     
+
+            &:focus {
+                outline: none; 
+                border: solid 1px #ec644b;
+                
+            }
+        }
+        
+    }
+    .btn__form {
+        padding: 18px 31px;
+        background-color: #ec644b;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        &:after {
+            content: '';
+            height: 100%;
+            width: 10px;
+            position: absolute;
+            background-color: #fff;
+            right: -11px;
+        }
+        &:before {
+            content: '';
+            height: 100%;
+            width: 10px;
+            position: absolute;
+            background-color: #fff;
+            left: -11px;
+        }
+    }
+}
