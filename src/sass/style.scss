@@ -1,6 +1,6 @@
 // @import 'libs/bootstrap-reboot.min';
 // @import 'libs/font';
-// @import 'libs/slick';
+@import 'libs/slick';
 // @import 'libs/animate';
 
 @import 'base/variables';
@@ -25,7 +25,8 @@
 @import 'blocks/scheme-work';
 @import 'blocks/map';
 @import 'blocks/forms';
-// @import 'blocks/carousel';
+@import 'blocks/carousel';
 @import 'blocks/question';
 @import 'blocks/footer';
-// @import 'blocks/modal';
+@import 'blocks/modal';
+@import 'blocks/humburger';

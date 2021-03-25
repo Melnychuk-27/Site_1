@@ -1,24 +1,144 @@
-.carousel {
-    padding: 81px 0;
-    &__inner {
-        position: relative;
-        width: 750px;
-        margin: 0 auto;
+.carusel {
+    padding: 51px 0 65px;
+    
+    &__title {
+        font-size: 26px;
+        font-weight: bold;
+        text-align: center;
+        color: #2e2e2e;
     }
-    .slick-prev, .slick-next  {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        left: -66px;
-        border: none;
-        background-color: #fff;
+    &__line {
+
+    }
+    &__subtitle {
+        margin-top: 17px;
+        font-size: 21px;
+        font-weight: 300;
+        text-align: center;
+        color: #2e2e2e;
+    }   
+    &__inner {
+        margin-top: 31px;
+    }
+    &__item {
+        width: 361px;
+        margin: 0 22.5px;
         img {
-            width: 31px;
-            height: 50px;
+            display: block;;
+            margin: 0 auto;
+            width: 114px;
+            height: 114px;
         }
     }
-    .slick-next  {
-        right: -66px;
-        left: auto;
+    &__descr {
+        margin-top: 19px;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.57;
+        text-align: justify;
+        color: #3a3a3a;
+        span {
+            display: block;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
     }
 }
+
+// .slick-prev {
+//     width: 15px;
+//   height: 47px;
+//   margin: 65px 7px 52px 98px;
+//   background-color: #ec644b;
+// }
+// .slick-next {
+//     width: 15px;
+//     height: 47px;
+//     margin: 65px 7px 52px 98px;
+//     background-color: #ec644b;
+// }
+
+
+
+
+
+
+
+
+
+
+
+// .wrapper {
+//     width: 600px;
+//     margin: 0 auto;
+// }
+//     .slider__container {
+//             // overflow: hidden;
+//             background: pink;
+//             // height: 100px;
+//             // width: 100px;
+            
+//         }
+//         .slider__track {
+//             display: flex;
+            
+//             // background: yellow;
+//             transition: .2s ;
+//         }
+//         .slider__item {
+//             background: rgba($color: #fff, $alpha: .5);
+//             min-width: 200px;
+//             height: 100px;
+//             &:nth-child(3n+1) {
+//                 background-color: red;
+//             }
+//             &:nth-child(3n+2) {
+//                 background-color: green;
+//             }
+//             &:nth-child(3n+3) {
+//                 background-color: blue;
+//             }
+//         }
+//         .slider__battons{
+//             .btn-prev {
+
+//             }
+//             .btn-next {
+
+//             }
+//         }
+    
+
+
+
+
+
+
+
+
+
+// .carousel {
+//     padding: 81px 0;
+//     &__inner {
+//         position: relative;
+//         width: 750px;
+//         margin: 0 auto;
+//     }
+//     .slick-prev, .slick-next  {
+//         position: absolute;
+//         top: 50%;
+//         transform: translateY(-50%);
+//         left: -66px;
+//         border: none;
+//         background-color: #fff;
+//         img {
+//             width: 31px;
+//             height: 50px;
+//         }
+//     }
+//     .slick-next  {
+//         right: -66px;
+//         left: auto;
+//     }
+// }

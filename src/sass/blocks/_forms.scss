@@ -16,7 +16,7 @@
 
 .question__form {
     padding-bottom: 25px;
-    width: 813px;
+    max-width: 813px;
     margin: 18px 41px 0 41px;
     input {
         box-sizing: border-box;
@@ -44,6 +44,62 @@
             outline: none; 
             border: solid 2px $border-focus_c;
             
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .advice__form {
+        padding: 17px 0 30px 0; 
+        input {
+            padding: 17px 24px;
+            margin-right: 4px;   
+            &:last-child {
+                margin-right: 0px;    
+            }
+        }
+
+    }
+}
+
+@media (max-width: 991px) {
+    .advice__form {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 17px 0 30px 0; 
+        input {
+            padding: 17px 24px;
+            margin-right: 0px;
+            margin-bottom: 10px; 
+            &:last-child {
+                margin-bottom: 0px;    
+            }   
+        }
+    }
+    
+    .question__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+        padding-bottom: 25px;
+        max-width: 513px;
+        margin: 18px auto;
+        
+        input {
+            padding: 17px 24px;
+            margin-bottom: 10px;
+
+            &:last-child {
+                margin-bottom: 0px;    
+            }   
+        }
+        textarea {
+            min-height: 71px;
+            margin-top: 8px;
+            padding: 17px 24px;
         }
     }
 }

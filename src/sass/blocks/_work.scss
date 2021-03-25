@@ -30,19 +30,16 @@
     &__wrapper{
         margin-top: 37px;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
-        // flex-wrap: wrap;
-        // flex-direction: row;
     }
     &__item{
         display: flex;
         flex-direction:column ;
         max-width: 359px;
     }
-    &__icon{
-        img{
+    img{
             display: block;
-        }
     }
     &__descr{
         font-family: Roboto;
@@ -58,5 +55,36 @@
         font-weight: bold;
         text-align: center;
         color: $main-color;
+    }
+}
+
+@media (max-width: 1199px) {
+    .work {
+        padding: 51px 30px 27px 30px;
+        &__wrapper{
+            justify-content: space-around;
+        }
+        &__item{
+            max-width: 400px;
+        }
+        &__descr{
+            margin-bottom: 15px;
+        }
+        &__title-decr{
+            margin-top: 27px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .work {
+        &__wrapper{
+            margin-top: 37px;
+            justify-content: space-around;
+        }
+        &__item{
+            max-width: 400px;
+            margin: 0 15px;
+        }
     }
 }

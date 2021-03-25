@@ -42,3 +42,31 @@
         color: $main-color;
     }
 }
+
+@media (max-width: 1199px) {
+    .scheme-work {
+        padding: 51px 0 46px 0;
+        &__title{
+            font-size: 26px;
+            line-height: 0.88;
+            margin-bottom: 3px;
+        }
+        &__item{
+            margin: 0 10px;
+            max-width: 253px;
+            padding: 26px 0;
+        }
+        &__icon{
+            height: 57px;
+            margin: 0 auto;
+        }
+        &__descr{
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 1.43;
+        }
+        &__subtitle{
+            font-size: 16px;
+        }
+    }
+}

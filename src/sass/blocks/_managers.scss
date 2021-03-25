@@ -36,3 +36,26 @@
         color: $text-color;
     }
 }
+
+@media (max-width: 1199px) {
+    .managers {
+        padding: 28px 0 36px 0;
+}
+}
+@media (max-width: 991px) {
+    .managers {
+        padding: 58px 30px 76px;
+        &__icon {
+            width: 102px;
+            height: 102px;
+        }
+        &__title {
+            margin-top: 20px;
+        }
+        &__descr {
+            margin-top: 22px;
+            font-size: 19px;
+            line-height: 1.42;
+        }
+    }
+}

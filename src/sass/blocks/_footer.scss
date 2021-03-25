@@ -106,3 +106,21 @@
         }
     }
 }
+
+@media (max-width: 919px) {
+    .footer {
+        padding: 14px 0 36px 0;
+        background-color: #25333c;
+        &__top-right {
+            flex-direction: column;
+        }
+        hr {
+            margin: 10px 0 10px;
+        }
+        .btn__footer {
+            margin-top: 10px;
+            font-size: 12px;
+            padding: 18px 23px;
+        }
+    }
+}

@@ -11,13 +11,14 @@
         margin-bottom: -5px;
     }
     &__wrapper{
+        // width: 1000px;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
     }
     &__item{
         display: flex;
-        max-width: 540px;
+        width: 540px;
         padding: 36px 0;
     }
     &__icon{
@@ -39,5 +40,45 @@
         font-size: 16px;
         font-weight: bold;
         color: $main-color;
+    }
+}
+
+@media (max-width: 1199px) {
+    .advantages {
+        padding: 37px 30px 51px 30px;
+        &__title{
+            font-size: 26px;
+            line-height: 0.88;
+            margin-bottom: -5px;
+        }
+        &__wrapper{
+            justify-content: space-around;
+        }
+        &__item{
+            display: flex;
+            flex-direction: column;
+            max-width: 280px;
+            padding: 36px 0;
+            margin-right: 20px;
+        }
+        &__icon{
+            
+            img{
+                margin: 0 auto;
+                display: block;
+                width: 65px;
+                height: 65px;
+            }
+        }
+        &__descr{
+            padding: 0;
+            font-size: 14px;
+            line-height: 1.57;
+            text-align: justify;
+        }
+        &__subtitle{
+            font-size: 16px;
+            text-align: center;
+        }
     }
 }

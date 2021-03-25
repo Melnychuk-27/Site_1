@@ -4,7 +4,7 @@
     background: url("../img/plane.jpg") center (center/cover) no-repeat;
     &__wrapper {
         margin: 0 auto;
-        width: 896px;
+        max-width: 896px;
         background-color: rgba($color: #fff, $alpha: .7);
     }
     &__title {
@@ -23,5 +23,21 @@
         font-size: 14px;
         font-weight: normal;
         color: $text-color;
+    }
+}
+
+@media (max-width: 1199px) {
+    .question {
+        padding: 28px 0 36px 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .question {
+        padding: 28px 0 36px 0;
+        &__wrapper {
+            // width: 600px;
+            margin: 0 auto;
+        }
     }
 }

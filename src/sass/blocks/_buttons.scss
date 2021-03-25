@@ -7,6 +7,9 @@
     text-transform: uppercase;
     cursor: pointer;
     transition: background-color 1s;
+    &:focus {
+        outline: none; 
+    }
     &:hover {
         background-color: #ff3916;
     }
@@ -50,6 +53,7 @@
         padding: 18px 23px;
         background-color: $main-color;
         font-size: 12px;
+        // margin-left: 20px;
     }
     &__question {
         display: block;
@@ -60,5 +64,50 @@
     }
 }
 
+@media (max-width: 1199px) {
+    .btn {
+        border-radius: 40px;
+        &__card {     
+            margin: 0 auto;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            padding: 18px 45px 16px 43px;
+        }
+        &__promo {
+            margin-top: 39px;
+            padding: 23px 45px;
+        }
+        &__menu {
+            display: none;
+        }
+        &__question {
+            margin: 0 auto;
+            margin-top: 17px;
+            padding: 18px 31px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .btn {
+        border-radius: 40px;
+        &__card {     
+            margin: 0 auto;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            padding: 18px 45px 16px 43px;
+        }
+        &__promo {
+            margin-top: 29px;
+            padding: 18px 45px;
+        }
+        
+        &__question {
+            margin: 0 auto;
+            margin-top: 17px;
+            padding: 18px 31px;
+        }
+    }
+}
 
 
