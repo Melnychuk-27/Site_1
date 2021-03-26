@@ -13,7 +13,6 @@
         }
     }
 }
-
 .question__form {
     padding-bottom: 25px;
     max-width: 813px;
@@ -47,10 +46,10 @@
         }
     }
 }
-
 @media (max-width: 1199px) {
     .advice__form {
-        padding: 17px 0 30px 0; 
+        flex-direction: row;
+        margin: 0 auto; 
         input {
             padding: 17px 24px;
             margin-right: 4px;   
@@ -61,7 +60,6 @@
 
     }
 }
-
 @media (max-width: 991px) {
     .advice__form {
         display: flex;
@@ -92,6 +90,83 @@
             padding: 17px 24px;
             margin-bottom: 10px;
 
+            &:last-child {
+                margin-bottom: 0px;    
+            }   
+        }
+        textarea {
+            min-height: 71px;
+            margin-top: 8px;
+            padding: 17px 24px;
+        }
+    }
+}
+@media (max-width: 321px) {
+    .advice__form {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 17px 0 30px 0; 
+        input { 
+            width: 200px;
+            margin-bottom: 10px; 
+            &:last-child {
+                margin-bottom: 0px;    
+            }   
+        }
+    }
+    .question__form {
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+        padding-bottom: 25px;
+        max-width: 313px;
+        margin: 18px auto;
+        margin-bottom: 0;
+        input {
+            padding: 17px 24px;
+            margin-bottom: 10px;
+            width: 100%;
+            &:last-child {
+                margin-bottom: 0px;    
+            }   
+        }
+        textarea {
+            min-height: 71px;
+            margin-top: 8px;
+            padding: 17px 24px;
+        }
+    }
+}
+
+@media (max-width: 321px) {
+    .advice__form {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 17px 0 30px 0; 
+        input { 
+            width: 200px;
+            margin-bottom: 10px; 
+            &:last-child {
+                margin-bottom: 0px;    
+            }   
+        }
+    }
+    .question__form {
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+        padding-bottom: 25px;
+        max-width: 313px;
+        margin: 18px auto;
+        margin-bottom: 0;
+        input {
+            padding: 17px 24px;
+            margin-bottom: 10px;
+            width: 100%;
             &:last-child {
                 margin-bottom: 0px;    
             }   

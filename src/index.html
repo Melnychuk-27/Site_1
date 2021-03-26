@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pulse</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -22,19 +21,19 @@
                     </div>
                     <div class="menu__body">
                     <ul class="menu">
-                            <li class="menu__item"><a href="#advantages" class="menu__link" data-goto=".advantages">Преимущества</a></li>
-                            <li class="menu__item"><a href="#work" class="menu__link" data-goto=".work">Наша работа</a></li>
-                            <li class="menu__item"><a href="#price" class="menu__link" data-goto=".price">Цены</a></li>
-                            <li class="menu__item"><a href="#scheme-work" class="menu__link" data-goto=".scheme-work">Схема работы</a></li>
-                            <li class="menu__item"><a href="#" class="menu__link" data-goto=".">Отзывы</a></li>
-                            <li class="menu__item"><a href="#map" class="menu__link" data-goto=".map">Контакты</a></li>
+                            <li class="menu__item"><a href="#advantages" class="menu__link">Преимущества</a></li>
+                            <li class="menu__item"><a href="#work" class="menu__link" >Наша работа</a></li>
+                            <li class="menu__item"><a href="#price" class="menu__link">Цены</a></li>
+                            <li class="menu__item"><a href="#scheme-work" class="menu__link">Схема работы</a></li>
+                            <li class="menu__item"><a href="#carusel" class="menu__link">Отзывы</a></li>
+                            <li class="menu__item"><a href="#map" class="menu__link">Контакты</a></li>
                     </ul>
                     </div>   
                     <div class="header__contacts">
                         <div class="header__contacts-text">Есть вопросы?</div>
                         <div class="header__contacts-number">+7 (926) 423 01 00</div>
                     </div>
-                    <button class="btn btn__menu" data-modal="consultation">Перезвоните мне</button>  
+                    <button class="btn btn__menu btn__call" data-modal="consultation">Перезвоните мне</button>  
                 </div>
             </header>
 
@@ -318,7 +317,7 @@
                     <input type="tel" name="tel" placeholder="Ваш номер телефона..." required>
                     <input type="email" name="email" placeholder="Ваш e-mail..." required>
                 </form>
-                <button class="btn btn__form" data-modal="thanks">Отправить заявку</button>
+                <button class="btn btn__form btn__send" data-modal="thanks">Отправить заявку</button>
             </div>
         </div>
     </section>
@@ -405,11 +404,12 @@
             отзывы наших клиентов
         </div>
         <div class="carusel__line"></div>
-        <div class="carusel__subtitle">
-            Мы всегда стараемся помочь клиентам, что бы они обращались к нам снова
-        </div>
+            <div class="carusel__subtitle">
+                Мы всегда стараемся помочь клиентам, что бы они обращались к нам снова
+            </div>
         <div class="carusel__inner">
-            <div class="carusel__item">
+            <button class="arrow__left"><img src="img/arrow_left.png" alt="arrow_left"></button>
+            <div class="carusel__item active">
                 <img src="img/olga.png" alt="olga">
                 <div class="carusel__descr">
                     <span>Анисимова Ольга</span>
@@ -421,49 +421,28 @@
                 </div>
             </div>
             <div class="carusel__item">
-                <img src="img/olga.png" alt="olga">
+                <img src="img/sveta.jpg" alt="sveta">
                 <div class="carusel__descr">
-                    <span>Анисимова Ольга</span>
+                    <span>Куклакова Света</span>
                     Хочу рассказать о компании Global Opt. 
-                    Самое главное что меня радует, это быстрый поиск 
+                    Таде не про то я думав так далие
                     и анализ определенного товара. Доставляла через компанию 
                     уже много раз, от расходных материалов для отеля, ло дольших 
                     партий детской одежды. Буду продолжать пользтваьбся услугами даной компании
                 </div>
             </div>
             <div class="carusel__item">
-                <img src="img/olga.png" alt="olga">
+                <img src="img/oleg.jpg" alt="oleg">
                 <div class="carusel__descr">
-                    <span>Анисимова Ольга</span>
+                    <span>Смирнов Олег</span>
                     Хочу рассказать о компании Global Opt. 
-                    Самое главное что меня радует, это быстрый поиск 
+                    Була баба били сито
                     и анализ определенного товара. Доставляла через компанию 
                     уже много раз, от расходных материалов для отеля, ло дольших 
                     партий детской одежды. Буду продолжать пользтваьбся услугами даной компании
                 </div>
             </div>
-            <div class="carusel__item">
-                <img src="img/olga.png" alt="olga">
-                <div class="carusel__descr">
-                    <span>Анисимова Ольга</span>
-                    Хочу рассказать о компании Global Opt. 
-                    Самое главное что меня радует, это быстрый поиск 
-                    и анализ определенного товара. Доставляла через компанию 
-                    уже много раз, от расходных материалов для отеля, ло дольших 
-                    партий детской одежды. Буду продолжать пользтваьбся услугами даной компании
-                </div>
-            </div>
-            <div class="carusel__item">
-                <img src="img/olga.png" alt="olga">
-                <div class="carusel__descr">
-                    <span>Анисимова Ольга</span>
-                    Хочу рассказать о компании Global Opt. 
-                    Самое главное что меня радует, это быстрый поиск 
-                    и анализ определенного товара. Доставляла через компанию 
-                    уже много раз, от расходных материалов для отеля, ло дольших 
-                    партий детской одежды. Буду продолжать пользтваьбся услугами даной компании
-                </div>
-            </div>
+            <button class="arrow__right"><img src="img/arrow_right.png" alt="arrow_left"></button>
         </div>
     </section>
 
@@ -476,12 +455,12 @@
                         Напишите нам!
                     </span>
                 </div>
-                    <form action="#" class="question__form">
-                        <input type="text" name="name" placeholder="Ваше имя..." required>
-                        <input type="tel" name="tel" placeholder="Ваш номер телефона..." required>
-                        <input type="email" name="email" placeholder="Ваш e-mail..." required>
-                        <textarea name="mуssage" id="mуssage" placeholder="Сообщение..." required></textarea>
-                        <button class="btn btn__question" data-modal="thanks">Отправить заявку</button>
+                    <form  name="question__form" action="#" class="question__form">
+                        <input type="text" name="name" placeholder="Ваше имя..." >
+                        <input type="tel" name="tell" placeholder="Ваш номер телефона..." >
+                        <input type="email" name="email" placeholder="Ваш e-mail..." >
+                        <textarea name="mуssage" id="mуssage" placeholder="Сообщение..." ></textarea>
+                        <button class="btn btn__question btn__send" data-modal="thanks">Отправить заявку</button>
                     </form>
             </div>
         </div>
@@ -507,7 +486,7 @@
                             <div class="footer__contacts-text">Есть вопросы?</div>
                             <div class="footer__contacts-number">+7 (926) 423 01 00</div>
                         </div>
-                        <button class="btn btn__footer" data-modal="consultation">Перезвоните мне</button>
+                        <button class="btn btn__footer btn__call" data-modal="consultation">Перезвоните мне</button>
                     </div>
                 </div>
                 <hr>
@@ -544,6 +523,16 @@
             </form>
         </div>
 
+        <div class="modal" id="сalculation">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">
+                Расчет
+            </div>
+            <div class="modal__descr">
+                Извените функция расчет временно не доступна!
+            </div>
+        </div>
+
         <div class="modal" id="thanks">
             <div class="modal__close">&times;</div>
             <div class="modal__subtitle">
@@ -565,9 +554,7 @@
 
 
     </div>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

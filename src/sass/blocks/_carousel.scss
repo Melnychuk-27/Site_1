@@ -1,5 +1,5 @@
 .carusel {
-    padding: 51px 0 65px;
+    padding: 51px 20px 65px;
     
     &__title {
         font-size: 26px;
@@ -8,7 +8,6 @@
         color: #2e2e2e;
     }
     &__line {
-
     }
     &__subtitle {
         margin-top: 17px;
@@ -19,16 +18,40 @@
     }   
     &__inner {
         margin-top: 31px;
+        display: flex;
+        justify-content: center;
+        .arrow__left {
+            background: #fff;
+            border: none;
+            outline: none;
+            img {
+                display: block;;
+                width: 20px;
+                height: 40px;
+            }
+        }
+        .arrow__right {
+            background: #fff;
+            border: none;
+            outline: none;
+            img {
+                display: block;;
+                width: 20px;
+                height: 40px;
+            }
+        }
     }
     &__item {
-        width: 361px;
+        display: none;
+        width: 80%;
         margin: 0 22.5px;
         img {
             display: block;;
             margin: 0 auto;
+            border-radius: 100%;
             width: 114px;
             height: 114px;
-        }
+        } 
     }
     &__descr {
         margin-top: 19px;
@@ -44,101 +67,8 @@
             font-weight: bold;
         }
     }
-}
-
-// .slick-prev {
-//     width: 15px;
-//   height: 47px;
-//   margin: 65px 7px 52px 98px;
-//   background-color: #ec644b;
-// }
-// .slick-next {
-//     width: 15px;
-//     height: 47px;
-//     margin: 65px 7px 52px 98px;
-//     background-color: #ec644b;
-// }
-
-
-
-
-
-
-
-
-
-
-
-// .wrapper {
-//     width: 600px;
-//     margin: 0 auto;
-// }
-//     .slider__container {
-//             // overflow: hidden;
-//             background: pink;
-//             // height: 100px;
-//             // width: 100px;
-            
-//         }
-//         .slider__track {
-//             display: flex;
-            
-//             // background: yellow;
-//             transition: .2s ;
-//         }
-//         .slider__item {
-//             background: rgba($color: #fff, $alpha: .5);
-//             min-width: 200px;
-//             height: 100px;
-//             &:nth-child(3n+1) {
-//                 background-color: red;
-//             }
-//             &:nth-child(3n+2) {
-//                 background-color: green;
-//             }
-//             &:nth-child(3n+3) {
-//                 background-color: blue;
-//             }
-//         }
-//         .slider__battons{
-//             .btn-prev {
-
-//             }
-//             .btn-next {
-
-//             }
-//         }
+    .active {
+        display: block;
+    }
     
-
-
-
-
-
-
-
-
-
-// .carousel {
-//     padding: 81px 0;
-//     &__inner {
-//         position: relative;
-//         width: 750px;
-//         margin: 0 auto;
-//     }
-//     .slick-prev, .slick-next  {
-//         position: absolute;
-//         top: 50%;
-//         transform: translateY(-50%);
-//         left: -66px;
-//         border: none;
-//         background-color: #fff;
-//         img {
-//             width: 31px;
-//             height: 50px;
-//         }
-//     }
-//     .slick-next  {
-//         right: -66px;
-//         left: auto;
-//     }
-// }
+}

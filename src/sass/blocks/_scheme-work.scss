@@ -2,7 +2,6 @@
     padding: 51px 0 46px 0;
     background-color: #f6f6f6;
     &__title{
-        font-family: Roboto;
         font-size: 26px;
         font-weight: bold;
         line-height: 0.88;
@@ -20,6 +19,9 @@
         margin: 0 10px;
         max-width: 253px;
         padding: 26px 0;
+        &:last-child {
+            padding:0;
+        }
     }
     &__icon{
         height: 57px;
@@ -29,7 +31,6 @@
         display: block;
     }
     &__descr{
-        font-family: Roboto;
         font-size: 14px;
         font-weight: 300;
         line-height: 1.43;
@@ -42,19 +43,49 @@
         color: $main-color;
     }
 }
-
-@media (max-width: 1199px) {
+@media (max-width: 991px) {
     .scheme-work {
-        padding: 51px 0 46px 0;
+        padding: 20px;
+        &__wrapper{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: baseline;
+            flex-wrap: wrap;
+        }
         &__title{
             font-size: 26px;
-            line-height: 0.88;
-            margin-bottom: 3px;
+            line-height: 1.2;
         }
         &__item{
-            margin: 0 10px;
-            max-width: 253px;
-            padding: 26px 0;
+            margin: 0;
+            width: 100%;
+            padding: 12px 0;
+        }
+        &__icon{
+            height: 57px;
+            margin: 0 auto;
+        }
+        &__descr{
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 1.43;
+        }
+        &__subtitle{
+            font-size: 16px;
+        }
+    }
+}
+@media (max-width: 321px) {
+    .scheme-work {
+        padding: 20px;
+        &__title{
+            font-size: 26px;
+            line-height: 1.2;
+        }
+        &__item{
+            margin: 0;
+            width: 100%;
+            padding: 12px 0;
         }
         &__icon{
             height: 57px;

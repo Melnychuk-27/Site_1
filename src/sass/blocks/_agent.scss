@@ -20,7 +20,6 @@
     }
     &__title {
         margin-top: 20px;
-        font-family: Roboto;
         font-size: 26px;
         font-weight: bold;
         text-align: center;
@@ -28,7 +27,6 @@
     }
     &__descr {
         margin-top: 22px;
-        font-family: Roboto;
         font-size: 19px;
         font-weight: 300;
         line-height: 1.42;
@@ -36,41 +34,19 @@
         color: $text-color;
     }
 }
-
-@media (max-width: 1199px) {
-    .agent {
-        padding: 38px 30px 35px 30px;
-        &__icon {
-            width: 102px;
-            height: 102px;
-        }
-        &__title {
-            margin-top: 20px;
-            font-size: 26px;
-        }
-        &__descr {
-            margin-top: 22px;
-            font-size: 19px;
-            line-height: 1.42;
-        }
-    }
-}
-
 @media (max-width: 991px) {
     .agent {
-        padding: 38px 30px 35px 30px;
-        &__icon {
-            width: 102px;
-            height: 102px;
-        }
+        padding: 40px 20px;
+    }
+}
+@media (max-width: 575px) {
+    .agent {
+        padding: 20px;
         &__title {
-            margin-top: 20px;
-            font-size: 26px;
+            margin-top: 10px;
         }
         &__descr {
-            margin-top: 22px;
-            font-size: 19px;
-            line-height: 1.42;
+            margin-top: 10px;
         }
     }
 }

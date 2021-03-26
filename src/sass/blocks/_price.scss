@@ -1,7 +1,6 @@
 .price {
     padding: 53px 0 56px 0;
     &__title{
-        font-family: Roboto;
         font-size: 26px;
         font-weight: bold;
         text-align: center;
@@ -16,7 +15,6 @@
     }
     &__subtitle {
         margin-top: 17px;
-        font-family: Roboto;
         font-size: 21px;
         font-weight: 300;
         line-height: 1.14;
@@ -39,7 +37,6 @@
         }
         &__title {
             padding: 22px 0;
-            font-family: Roboto;
             font-size: 16px;
             font-weight: bold;
             text-align: center;
@@ -58,7 +55,6 @@
         }
         &__term {
             margin-top: 12px;
-            font-family: Roboto;
             font-size: 14px;
             font-weight: 400;
             text-transform: uppercase;
@@ -73,7 +69,6 @@
         }
         &__descr {
             margin-top: 19px;
-            font-family: Roboto;
             font-size: 14px;
             font-weight: 300;
             line-height: 1.43;
@@ -83,76 +78,126 @@
     }
 }
 
+// @media (max-width: 1199px) {
+//     .price {
+//         padding: 35px 30px 35px 30px;
+//         .card {
+//             margin-top: 34px;
+//             justify-content: center;
+//             &__item {
+//                 margin: 0 10px;
+//                 margin-top: 30px;
+//                 width: 300px; 
+//             }
+//             &__title {
+//                 padding: 22px 0;
+//                 font-size: 16px;
+//                 line-height: 23px;
+//                 margin-bottom: 14px;
+//                 }
+//         }
+//     }
+// }
+// @media (max-width: 991px) {
+//     .price {
+//         padding: 35px 30px 35px 30px;
+//         &__title{
+//             font-size: 26px;
+//         }
+//         &__line {
+//             margin: 0 auto;
+//             margin-top: 20px;
+//             width: 148px;
+//             height: 1px;
+//         }
+//         &__subtitle {
+//             margin-top: 17px;
+//             font-size: 21px;
+//             line-height: 1.14;
+//         }
+        
+//         .card {
+//             margin-top: 34px;
+//             justify-content: center;
+//             &__item {
+//                 margin: 0 10px;
+//                 margin-top: 30px;
+//                 width: 300px; 
+//             }
+//             &__title {
+//                 padding: 22px 0;
+//                 font-size: 16px;
+//                 line-height: 23px;
+//                 margin-bottom: 14px;
+//                 }
+//             &___icon {
+//                 height: 58px;
+//             }
+//             &__body {
+//                 padding: 0 10px;
+//             }
+//             &__term {
+//                 margin-top: 12px;
+//                 font-size: 14px;
+//                 span {
+//                     font-size: 28px;
+//                 }
+//             }
+//             &__descr {
+//                 margin-top: 19px;
+//                 font-size: 14px;
+//                 font-weight: 300;
+//                 line-height: 1.43;
+//             }
+//         }
+//     }
+// }
+//}
 @media (max-width: 1199px) {
-    .price {
-        padding: 35px 30px 35px 30px;
-        .card {
-            margin-top: 34px;
-            justify-content: center;
-            &__item {
-                margin: 0 10px;
-                margin-top: 30px;
-                width: 300px; 
+        .price {
+            padding: 20px;
+            &__title{
+                font-size: 26px;
             }
-            &__title {
-                padding: 22px 0;
-                font-size: 16px;
-                line-height: 23px;
-                margin-bottom: 14px;
+            .card {
+                margin: 0px;
+                justify-content: center;
+                &__item {
+                    margin: 0 20px;
+                    margin-top: 30px;
+                    width: 300px; 
                 }
+                &___icon {
+                    height: 58px;
+                }
+            }
         }
-    }
 }
 @media (max-width: 991px) {
     .price {
-        padding: 35px 30px 35px 30px;
+        padding: 20px;
         &__title{
             font-size: 26px;
         }
-        &__line {
-            margin: 0 auto;
-            margin-top: 20px;
-            width: 148px;
-            height: 1px;
-        }
-        &__subtitle {
-            margin-top: 17px;
-            font-size: 21px;
-            line-height: 1.14;
-        }
-        
         .card {
-            margin-top: 34px;
+            margin: 0px;
             justify-content: center;
             &__item {
+                width: calc(50% - 20px);
                 margin: 0 10px;
                 margin-top: 30px;
-                width: 300px; 
             }
-            &__title {
-                padding: 22px 0;
-                font-size: 16px;
-                line-height: 23px;
-                margin-bottom: 14px;
-                }
             &___icon {
                 height: 58px;
             }
-            &__body {
-                padding: 0 10px;
-            }
-            &__term {
-                margin-top: 12px;
-                font-size: 14px;
-                span {
-                    font-size: 28px;
-                }
-            }
-            &__descr {
-                margin-top: 19px;
-                font-size: 14px;
-                font-weight: 300;
-                line-height: 1.43;
+        }
+    }
+}
+@media (max-width: 575px) {
+    .price {
+        .card {
+            &__item {
+                width: 100%;
             }
         }
     }

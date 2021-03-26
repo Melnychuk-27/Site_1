@@ -2,7 +2,6 @@
     padding-bottom: 58px;
     &__title {
         margin-bottom: 20px;
-        font-family: Roboto;
         font-size: 28px;
         font-weight: normal;
         text-align: center;
@@ -48,7 +47,6 @@
         }
     }
 }
-
 @media (max-width: 1199px) {
     .advice {
         &__border {
