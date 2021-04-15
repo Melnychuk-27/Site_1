@@ -10,12 +10,7 @@
         margin-bottom: -5px;
     }
     &__line {
-        margin: 0 auto;
-        margin-top: 20px;
-        width: 148px;
-        height: 1px;
-        background-color: $main-color;
-        
+        @include line;
     }
     &__subtitle{
         margin-top: 17px;

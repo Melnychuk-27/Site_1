@@ -43,7 +43,7 @@
 
 @media (max-width: 1199px) {
     .advantages {
-        padding: 37px 20px 0px;
+        padding: 37px 20px;
         &__wrapper{
             justify-content: center;
         }
@@ -70,7 +70,7 @@
 }
 @media (max-width: 991px) {
     .advantages {
-        padding: 27px 20px 0px;
+        padding: 27px 20px;
         &__title{
             line-height: 1.2;
         }

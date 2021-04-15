@@ -6,6 +6,7 @@ const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
 const imagemin = require('gulp-imagemin');
 const htmlmin = require('gulp-htmlmin');
+var fileinclude = require('gulp-file-include');
 // Static server
 gulp.task('server', function() {
     browserSync.init({
@@ -16,6 +17,18 @@ gulp.task('server', function() {
 
     gulp.watch("src/*.html").on("change", browserSync.reload);
 });
+
+
+gulp.task('fileinclude', function() {
+  gulp.src(['src/html/index.html'])
+    .pipe(fileinclude({
+      prefix: '@@',
+      basepath: '@file'
+    }))
+    .pipe(gulp.dest('./src')); //выгружаем файл
+});
+
+
 gulp.task('styles', function() {
     return gulp.src("src/sass/**/*.+(scss|sass)")
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
@@ -32,7 +45,9 @@ gulp.task('styles', function() {
 })
 
 gulp.task('watch', function(){
-    gulp.watch("src/sass/**/*.+(scss|sass|css)", gulp.parallel("styles")).on("change", browserSync.reload);;
+    gulp.watch("src/sass/**/*.+(scss|sass|css)", gulp.parallel("styles")).on("change", browserSync.reload);
+    gulp.watch("src/html/*.html").on("change", gulp.parallel('fileinclude')).on("change", browserSync.reload);
+    gulp.watch("src/js/*.js").on("change", gulp.parallel('scripts')).on("change", browserSync.reload);
     gulp.watch("src/*.html").on("change", gulp.parallel('html'));
 });
 
@@ -64,5 +79,5 @@ gulp.task('images', function () {
 });
 
 
-gulp.task('default', gulp.parallel('watch','server','styles','scripts','fonts','icons','images','html'));
+gulp.task('default', gulp.parallel("fileinclude",'watch','server','styles','scripts','fonts','icons','images','html'));
 

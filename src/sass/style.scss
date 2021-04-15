@@ -1,9 +1,7 @@
-// @import 'libs/bootstrap-reboot.min';
 @import 'libs/font';
-// @import 'libs/animate';
 
 @import 'base/variables';
-// @import 'base/animations';
+@import 'base/mixins';
 * {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
